@@ -1,4 +1,5 @@
 import React from "react";
+import CartWidget from "./CartWidget";
 
 const NavBar = () => {
   return (
@@ -30,6 +31,7 @@ const NavBar = () => {
             <input class="form-control me-2" type="search" placeholder="¿Qué buscas?" aria-label="Search" />
             <button class="btn btn-outline-success" type="submit">Buscar</button>
           </form>
+          <CartWidget items={4}/>
         </div>
       </div>
     </nav>
