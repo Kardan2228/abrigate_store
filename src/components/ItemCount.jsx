@@ -13,23 +13,16 @@ const ItemCount = ({initial, stock, onAdd}) => {
     }
 
   return (
-    <div class = 'card border-info mb-3" style="max-width: 18rem;'>
-        <div class='card-header text-center fw-bold'>Prenda</div>
-        <div class='card-body text-primary text-center'>
-        <h5 class="card-title">Nombre de la prenda</h5>
-        <p class="card-text">Descripción e imagen de la prenda.</p>
-        </div>
-
-
-
-        <div class='d-flex flex-row justify-content-center'>
-            <button onClick={restar} class="class= btn btn-none">-</button>
+    <div className = 'card border-info mb-3" style="max-width: 18rem;'>
+        
+        <div className='d-flex flex-row justify-content-center'>
+            <button onClick={restar} className="class= btn btn-none">-</button>
            
-            <span class="fs-6 fw-bold ">{count}</span>
-            <button onClick={sumar} class="class= btn btn-none">+</button>
+            <span className="fs-6 fw-bold ">{count}</span>
+            <button onClick={sumar} className="class= btn btn-none">+</button>
         </div>
-        <div class='d-flex flex-row justify-content-center'>
-            <button onClick={() => onAdd(count) } class="btn btn-outline-info">Agregar a la cesta</button>
+        <div className='d-flex flex-row justify-content-center'>
+            <button onClick={() => onAdd(count) } className="btn btn-outline-info">Agregar a la cesta</button>
         </div>
     </div>
   )

@@ -1,16 +1,22 @@
-import React from 'react'
+import React from "react";
 
 const Item = (prenda) => {
-    const { prenda: { name, image, price, stock } } = prenda;
+    const {id, articulo, precio, stock, } = prenda.prenda;
     return (
-        <div class='card border-info mb-3;'>
-            <img class="card-img-top" src="..." alt="Card image cap"></img>
-            <div class="card-body">
-                <h5 class="card-title">{name}</h5>
-                <p class="card-text">{price}</p>
+        <div id="container">
+            <div className="cardPrenda">
+                <div className="articulo">{articulo}</div>
+                <img src="vestido_dibujo.png" alt="Imagen de la prenda" />
+                <div className="card__details">
+                    <span className="codigo">Código</span>
+                    <span className="id">{id}</span>
+                    <p className="precio">Precio: {precio}</p>
+                    <p className="stock">Stock: {stock}</p>
+                    <button className="btnCard">Detalles</button>
+                </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Item
+export default Item;
