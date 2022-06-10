@@ -13,7 +13,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
     }
 
   return (
-    <div className = 'card border-info mb-3" style="max-width: 18rem;'>
+    <div>
         
         <div className='d-flex flex-row justify-content-center'>
             <button onClick={restar} className="class= btn btn-none">-</button>
